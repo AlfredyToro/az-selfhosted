@@ -1,5 +1,7 @@
 docker run -e AZP_URL=https://dev.azure.com/alextoro77 -e AZP_TOKEN=ecygxpjrferxosauw4bctxifkwbgk3m34654qssmtezq5cecvgia -e AZP_AGENT_NAME=mac-agent azureagent-selfhosted:latest
 
+-run con socket docker in docker
+docker run -it -v /var/run/docker.sock:/var/run/docker.sock -e AZP_URL=https://dev.azure.com/alextoro77 -e AZP_TOKEN=ecygxpjrferxosauw4bctxifkwbgk3m34654qssmtezq5cecvgia -e AZP_AGENT_NAME=mac-agent -d azureagent-selfhosted:latest
 
 AZP_URL	The URL of the Azure DevOps or Azure DevOps Server instance.
 AZP_TOKEN	Personal Access Token (PAT) with Agent Pools (read, manage) scope, created by a user who has permission to configure agents, at AZP_URL.
@@ -14,3 +16,4 @@ export AZP_POOL=local_agent
 export AZP_WORK=
 
 develop
+
