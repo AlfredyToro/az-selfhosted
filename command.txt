@@ -12,3 +12,5 @@ export AZP_TOKEN=ecygxpjrferxosauw4bctxifkwbgk3m34654qssmtezq5cecvgia
 export AZP_AGENT_NAME=mac-agent
 export AZP_POOL=local_agent
 export AZP_WORK=
+
+develop
